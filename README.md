@@ -1,4 +1,4 @@
-# reduxIntroCounter_Saya-
+# reduxIntroCounter_Sayac
 
 Bu uygulamada Redux' a giriş yapılarak bir sayaç geliştirilecektir.
 
