@@ -7,3 +7,5 @@ Sayacın 3 butonu olacaktır: +1, -1, +2 şeklinde sayıyı değiştirmesi sağl
 Bu componentlerin hepsi Redux storage' a bağlanacaktır. 
 
 <img src="images/redux.png" raw=true/>
+
+*Magic String' ten kurtulmak için actionTypes.js oluşturuldu. İçine birden fazla yerde kullanılacak olan variablelar const olarak tutulmuştur.
