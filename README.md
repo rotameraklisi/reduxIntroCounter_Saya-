@@ -1,38 +1,68 @@
-# reduxIntroCounter_Sayac
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Bu uygulamada Redux' a giriş yapılarak bir sayaç geliştirilecektir.
+## Available Scripts
 
-Sayacın 3 butonu olacaktır: +1, -1, +2 şeklinde sayıyı değiştirmesi sağlanacaktır.
-3 buton ve mevcut sayıyı gösterecek componentle beraber toplam 4 componentten oluşacaktır ve dışarıda bir Redux için Redux storage tutulacaktır.
+In the project directory, you can run:
 
-Öncelikle yeni bir proje oluşturuyoruz: **npx create-react-app redux-intro**
-Projenin oluşturulduğu yerde : **npm install redux** ve **npm install react-redux**.
-Bu componentlerin hepsi Redux storage' a bağlanacaktır. 
+### `npm start`
 
-<img src="images/redux.png" raw=true/>
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Önce yeni bir proje oluşurulur ve Terminal' den redux indirme: npm install redux; react için redux: npm install react-redux komutları yazılır.
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-*Magic String' ten kurtulmak için actionTypes.js oluşturuldu. İçine birden fazla yerde kullanılacak olan variablelar const olarak tutulmuştur.
+### `npm test`
 
-*Redux ile ilk iletişimi kurduğumuz nokta: actionlardır. Bu yüzden counterAction.js oluşturuldu.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Action: componentimizden çağırdığımız aksiyondur.
-Bu action, Reducer yapısı ile kontrol altına alınmaktadır. Reducer, ilgili action' ı içerip içermediğine bakmaktadır.
+### `npm run build`
 
-Bu Reducer , aksiyona göre state belirlemektedir., state' mizi kontrol ettiğimiz yer
-Componentler sadece reducer içindeki stateden yararlanacaktır. Reducerdaki state' e göre artırıp , azaltma işlemi uygulanacaktır.
-Önce kopya alıp, ref oluşturup onun üzerinde işlem yapılacaktır. Referans üzerinden işlem yapmak gerekir.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-"reducers" folderının içinde genelde index.js dosyası bulunur ve Reducerları bir araya getirir.
-Redux->  reducerlarına gidiyo bakıyor ve ilgili action'ı kullanan biri var mı diye bakıyor.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-store-> bu yapının tamamını içeren yapı
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
- Reducer' ın amacı state bilgisini döndürmektir.
- configureStore-> veritabanı gibi düşünülebilir, Store denilen yapıyı tanımlıyor
- *Uygulamanın index.js'sine  (src\index.js) react-redux kullanacağı belirtiliyor ve Provider, App' ye tanımlanmış oluyor. Yani, bizim App artık bir store' a bağlı
-*redux hazır hale gelir
-*Redux, Componentlere bağlanır.
+### `npm run eject`
 
-Counter.js' teki ->import {connect } from "react-redux";  -> Connvect nesnesi redux ' a bağlanmayı sağlayacaktır.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
